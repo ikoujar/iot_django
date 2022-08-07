@@ -89,3 +89,6 @@ local_settings.py
 db.sqlite3
 .idea
 data
+static
+static_volume
+media_volume
