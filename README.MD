@@ -5,7 +5,7 @@ The goal of this project is to provide a minimalistic API for an IoT Company.
 The project is written with:
 * python 3
 * django 4.1
-* DRF 3.13.
+* DRF 3.13
 
 ### Main features
 
