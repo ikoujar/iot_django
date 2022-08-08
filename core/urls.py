@@ -22,16 +22,17 @@ from drf_yasg import openapi
 from company import views
 
 schema_view = get_schema_view(
-   openapi.Info(
-      title="Project API",
-      default_version='v1',
-      description="Project api test documentation",
-      terms_of_service="https://www.google.com/policies/terms/",
-      contact=openapi.Contact(email="ibrahimkoujar92@gmail.com"),
-      license=openapi.License(name="BSD License"),
-   ),
-   public=True,
-   permission_classes=[permissions.AllowAny],
+    openapi.Info(
+        title="Project API",
+        default_version='v1',
+        description="Project api test documentation",
+        terms_of_service="https://www.google.com/policies/terms/",
+        contact=openapi.Contact(email="ibrahimkoujar92@gmail.com"),
+        license=openapi.License(name="BSD License"),
+    ),
+    url='http://localhost:8000/',
+    public=True,
+    permission_classes=[permissions.AllowAny],
 )
 
 urlpatterns = [
@@ -46,4 +47,3 @@ urlpatterns = [
     re_path(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('__debug__/', include('debug_toolbar.urls')),
 ]
-
