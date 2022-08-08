@@ -22,9 +22,10 @@ The project is written with:
 
 First clone the repository from GitHub and switch to the new directory:
 
-    $ git clone git@github.com/ikoujar/iot_django.git
-    $ cd iot_django
-
+```bash
+git clone git@github.com/ikoujar/iot_django.git
+cd iot_django
+```
 
 ## Local setup
 
@@ -36,29 +37,40 @@ First clone the repository from GitHub and switch to the new directory:
 ### setup
 Activate the virtualenv for your project.
 
-    $ virtualenv env
-    $ source env/bin/activate
+```bash
+virtualenv env
+source env/bin/activate
+```
 
 Install project dependencies:
 
-    $ pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
 Create your environment file and set your database connection information within `.env`:
 
-    $ cp .env.example .env
+```bash
+cp .env.example .env
+```
 
 Then simply apply the migrations:
 
-    $ python manage.py migrate
+```bash
+python manage.py migrate
+```
 
 You can now run the development server:
 
-    $ python manage.py runserver 0.0.0.0:8080
+```bash
+python manage.py runserver 0.0.0.0:8080
+```
 
 **[OPTIONAL]** Finally, you can generate sample data using the following command:
 
-    $ python manage.py db_seed
-
+```bash
+python manage.py db_seed
+```
 
 ## Docker setup
 
@@ -72,18 +84,21 @@ This setup includes (Django - Postgres - Nginx)
 
 Create your environment file:
 
-    $ cp .env.example .env
-
+```bash
+cp .env.example .env
+```
 
 Start the project using docker-compose:
 
-    $ docker-compose up
-
+```bash
+docker-compose up
+```
 
 **[OPTIONAL]** Finally, you can generate sample data using the following command:
 
-    $ docker-compose exec web python manage.py db_seed
-
+```bash
+docker-compose exec web python manage.py db_seed
+```
 
 Open http://localhost:8000 with your browser to see the result.
 
