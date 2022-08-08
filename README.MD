@@ -83,3 +83,10 @@ Start the project using docker-compose:
 **[OPTIONAL]** Finally, you can generate sample data using the following command:
 
     $ docker-compose exec web python manage.py db_seed
+
+
+Open http://localhost:8000 with your browser to see the result.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
