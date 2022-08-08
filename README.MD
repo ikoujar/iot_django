@@ -70,7 +70,7 @@ This setup includes (Django - Postgres - Nginx)
 
 ### setup
 
-Create your environment file and set your database connection information within `.env`:
+Create your environment file:
 
     $ cp .env.example .env
 
