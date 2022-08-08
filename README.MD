@@ -18,10 +18,11 @@ The project is written with:
 
 # IOT Company (Django Rest Framework)
 
+![](docs/swagger.png)
+
 # Getting Started
 
 First clone the repository from GitHub and switch to the new directory:
-
 ```bash
 git clone git@github.com/ikoujar/iot_django.git
 cd iot_django
@@ -103,6 +104,8 @@ docker-compose exec web python manage.py db_seed
 ```
 
 Open http://localhost:8000 with your browser to see the result.
+
+Open http://localhost:8000/swagger for APIs list.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
