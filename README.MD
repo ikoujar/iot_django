@@ -63,7 +63,7 @@ python manage.py migrate
 You can now run the development server:
 
 ```bash
-python manage.py runserver 0.0.0.0:8080
+python manage.py runserver 0.0.0.0:8000
 ```
 
 **[OPTIONAL]** Finally, you can generate sample data using the following command:
@@ -71,6 +71,8 @@ python manage.py runserver 0.0.0.0:8080
 ```bash
 python manage.py db_seed
 ```
+
+Open http://localhost:8000 with your browser to see the result.
 
 ## Docker setup
 
