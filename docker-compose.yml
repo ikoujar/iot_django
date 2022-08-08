@@ -18,8 +18,6 @@ services:
       - ./:/app/
       - ./static_volume:/app/static
       - ./media_volume:/app/media
-    ports:
-      - "8000:8000"
     networks:
       - django-network
     depends_on:
@@ -31,7 +29,7 @@ services:
       - static_volume:/app/static
       - media_volume:/app/media
     ports:
-      - "8081:80"
+      - "8000:80"
     depends_on:
       - web
     networks:
