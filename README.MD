@@ -70,6 +70,11 @@ This setup includes (Django - Postgres - Nginx)
 
 ### setup
 
+Create your environment file and set your database connection information within `.env`:
+
+    $ cp .env.example .env
+
+
 Start the project using docker-compose:
 
     $ docker-compose up
