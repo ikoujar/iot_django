@@ -17,7 +17,6 @@ class CompanyListAPI(generics.ListCreateAPIView):
     model = serializer_class.Meta.model
 
     def get_queryset(self):
-        # poster_id = self.kwargs['poster_id']
         return self.model.objects.filter()
 
 
